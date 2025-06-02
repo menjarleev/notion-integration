@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package notion;
+
+service DatabaseService {
+  rpc InsertRecurringItem (RecurringItemRequest) returns (RecurringItemResponse);
+}
+
+message RecurringItemRequest {
+  optional string database_id = 1;
+}
+
+message RecurringItemResponse {}
