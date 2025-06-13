@@ -1,0 +1,10 @@
+repos:
+  - repo: local
+    hooks:
+      - id: update-requirements-lock
+        name: Update requirements_lock.txt
+        entry: bazel build //:requirements_lock
+        language: system
+        types: [file]
+        files: ^requirements\.txt$
+        pass_filenames: false

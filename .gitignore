@@ -1,10 +1,57 @@
+# Environment variables
+.env
+
+# Virtual Environment
+venv/
+ENV/
+env/
+
 # Python
 __pycache__/
 *.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
 *.egg-info/
-env/
-venv/
-.env
+.installed.cfg
+*.egg
 
-# VS Code / Dev Container
+# IDE
+.idea/
 .vscode/
+*.swp
+*.swo
+
+# Project specific
+notion_schema.json
+
+# OS specific
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Flags configuration
+flags.conf
+
+# Bazel
+bazel-*
+bazel-bin/
+bazel-out/
+bazel-testlogs/
+bazel-notion-integration/
